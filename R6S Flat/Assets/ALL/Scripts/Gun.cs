@@ -36,7 +36,6 @@ public class GunStats
     public float cameraShakeDuration;
 }
 
-
 public class Gun : MonoBehaviour
 {
     public GunStats STATS;
@@ -74,10 +73,19 @@ public class Gun : MonoBehaviour
         else
             UTIL.GetPlayer().GetComponent<Animator>().SetBool("Aim", false);
 
+        bool shoot = false;
+
+        foreach (Ammo a in UTIL.GetPlayer().GetComponent<PlayerStats>().ammo)
+        {
+            if (a.name == STATS.ammoType && a.count > 0)
+            {
+                shoot = true;
+            }
+        }
 
         if (STATS.fullAuto)
         {
-            if (Input.GetMouseButton(0) && STATS.fireRate_timer <= 0 && !reloading)
+            if (Input.GetMouseButton(0) && STATS.fireRate_timer <= 0 && !reloading && shoot)
             {
                 Shoot();
                 ShakeCamera(STATS.cameraShakeDuration);
@@ -85,7 +93,7 @@ public class Gun : MonoBehaviour
         }
         else
         {
-            if (Input.GetMouseButtonDown(0) && STATS.fireRate_timer <= 0 && !reloading)
+            if (Input.GetMouseButtonDown(0) && STATS.fireRate_timer <= 0 && !reloading & shoot)
             {
                 Shoot();
                 ShakeCamera(STATS.cameraShakeDuration);
@@ -122,6 +130,15 @@ public class Gun : MonoBehaviour
 
             STATS.fireRate_timer = STATS.fireRate;
             STATS.magSize_counter -= 1;
+
+            foreach (Ammo a in UTIL.GetPlayer().GetComponent<PlayerStats>().ammo)
+            {
+                if(a.name == STATS.ammoType)
+                {
+                    a.count -= 1;
+                }
+            }
+
         }
     }
 
