@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -16,6 +17,10 @@ public class BasicMovement : MonoBehaviour
     public bool smoothMovement;
 
     public float rotSpeed;
+
+    public GameObject footStep_particles;
+    public float particleSpawnInterval;
+    private float particleSpawnInterval_timer;
 
     void Start()
     {
@@ -48,6 +53,16 @@ public class BasicMovement : MonoBehaviour
 
         if (x * y != 0)
             speed *= diag_movementDelta;
+
+        if (x + y*2 != 0)
+        {
+            particleSpawnInterval_timer += 1;
+            if (particleSpawnInterval_timer >= particleSpawnInterval)
+            {
+                Instantiate(footStep_particles, transform.position, Quaternion.identity);
+                particleSpawnInterval_timer = 0;
+            }
+        }
 
         Vector2 movePos = transform.position;
         movePos.x += x * speed;

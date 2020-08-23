@@ -677,7 +677,7 @@ SpriteRenderer:
   m_SortingLayerID: 1822787843
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: -806953552911236033, guid: 48448ec4c7030f546b75a47c0507bb1b,
+  m_Sprite: {fileID: 3445674281854026479, guid: 48448ec4c7030f546b75a47c0507bb1b,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -783,6 +783,17 @@ MonoBehaviour:
   maxHealth: 100
   healFactor: 0
   armour: 0
+  ammo:
+  - name: SMG
+    count: 90
+  - name: AR
+    count: 90
+  - name: 
+    count: 0
+  - name: 
+    count: 0
+  - name: 
+    count: 0
   debugColors: 0
   corpse: []
 --- !u!114 &1620176051
@@ -1187,7 +1198,7 @@ PrefabInstance:
     - target: {fileID: 9133201526527734124, guid: d95da88540d2d6e44a0c4c40c581b24a,
         type: 3}
       propertyPath: Color.a
-      value: 0.5882353
+      value: 0.77254903
       objectReference: {fileID: 0}
     - target: {fileID: 9133201526527734124, guid: d95da88540d2d6e44a0c4c40c581b24a,
         type: 3}
@@ -1197,12 +1208,17 @@ PrefabInstance:
     - target: {fileID: 9133201526527734124, guid: d95da88540d2d6e44a0c4c40c581b24a,
         type: 3}
       propertyPath: Color.r
-      value: 0.75
+      value: 0.9669811
       objectReference: {fileID: 0}
     - target: {fileID: 9133201526527734124, guid: d95da88540d2d6e44a0c4c40c581b24a,
         type: 3}
       propertyPath: Color.g
-      value: 0.9353875
+      value: 0.99231577
+      objectReference: {fileID: 0}
+    - target: {fileID: 9133201526527734124, guid: d95da88540d2d6e44a0c4c40c581b24a,
+        type: 3}
+      propertyPath: Intensity
+      value: 0.7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d95da88540d2d6e44a0c4c40c581b24a, type: 3}
