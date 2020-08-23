@@ -51,3 +51,10 @@ Update Mode: updateDependencies
 
 The following packages were 업데이트됨:
   com.unity.ide.vscode 1.1.4 버전에서 1.2.0버전으로  com.unity.render-pipelines.universal 7.1.8 버전에서 7.3.1버전으로  com.unity.test-framework 1.1.9 버전에서 1.1.14버전으로
+=== Sun Aug 23 09:47:41 2020
+
+Packages were changed.
+Update Mode: updateDependencies
+
+The following packages were updated:
+  com.unity.ide.vscode from version 1.2.0 to 1.2.1

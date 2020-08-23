@@ -42,9 +42,15 @@ TagManager:
   - name: BG
     uniqueID: 3991283951
     locked: 0
+  - name: Environment_Back
+    uniqueID: 3847070387
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
   - name: Player
     uniqueID: 1822787843
+    locked: 0
+  - name: Particles_Front
+    uniqueID: 3578971027
     locked: 0

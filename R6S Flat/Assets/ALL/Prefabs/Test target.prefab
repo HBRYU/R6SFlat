@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5959944962347079167}
   - component: {fileID: 5959944962347079164}
   - component: {fileID: -2000987789512766544}
+  - component: {fileID: 8180038775227593836}
   m_Layer: 20
   m_Name: Test target
   m_TagString: Untagged
@@ -124,11 +125,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   userName: Box
   barrelEnd: {fileID: 0}
+  bulletSpawnPoint: {fileID: 0}
   ID: 0
   health: 100
   maxHealth: 100
   healFactor: 5
   armour: 0.22
+  ammo: []
   debugColors: 1
   corpse: []
 --- !u!114 &-2000987789512766544
@@ -149,6 +152,25 @@ MonoBehaviour:
     m_Bits: 261376
   maxDist: 12
   showDist: 1
-  useAnim: 0
+  useAnim: 1
   selfRaycast: 0
   raycastPos: []
+--- !u!95 &8180038775227593836
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5959944962347079136}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 42b50b6d9c22eb2449dd7f37447d15ed, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

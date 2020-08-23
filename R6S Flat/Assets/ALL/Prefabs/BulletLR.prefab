@@ -152,5 +152,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   visibleTime: 0.1
   initialSubtraction: 0.5
-  decayTime: 0.5
+  decayTime: 0.3
   fadeDelta: 15
