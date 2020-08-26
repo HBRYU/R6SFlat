@@ -11,12 +11,12 @@ GameObject:
   - component: {fileID: 5959944962347079165}
   - component: {fileID: 5959944962347079166}
   - component: {fileID: 5959944962347079167}
-  - component: {fileID: 5959944962347079164}
   - component: {fileID: -2000987789512766544}
   - component: {fileID: 8180038775227593836}
-  m_Layer: 20
+  - component: {fileID: 669594213647393255}
+  m_Layer: 22
   m_Name: Test target
-  m_TagString: Untagged
+  m_TagString: Breakable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -71,8 +71,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1822787843
-  m_SortingLayer: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: -5
   m_Sprite: {fileID: 21300000, guid: a369d2f82fdb3f245834c8d39c1e46cc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -111,29 +111,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &5959944962347079164
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5959944962347079136}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d2fc1ef7ba1ae7c4495c56f32963c69a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  userName: Box
-  barrelEnd: {fileID: 0}
-  bulletSpawnPoint: {fileID: 0}
-  ID: 0
-  health: 100
-  maxHealth: 100
-  healFactor: 5
-  armour: 0.22
-  ammo: []
-  debugColors: 1
-  corpse: []
 --- !u!114 &-2000987789512766544
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -149,11 +126,11 @@ MonoBehaviour:
   target: {fileID: 0}
   wallLayers:
     serializedVersion: 2
-    m_Bits: 261376
+    m_Bits: 1280
   maxDist: 12
   showDist: 1
   useAnim: 1
-  selfRaycast: 0
+  selfRaycast: 1
   raycastPos: []
 --- !u!95 &8180038775227593836
 Animator:
@@ -174,3 +151,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &669594213647393255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5959944962347079136}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ac51547f57219c429044aa4e169daa9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ID: Box
+  health: 50
+  onBreakSpawnObjs: []
+  objSpawnOffset: 0

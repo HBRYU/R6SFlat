@@ -113,9 +113,9 @@ public class Gun : MonoBehaviour
         if (shot.collider != null)
         {
             //Debug.Log("hit");
-            if (shot.collider.gameObject.GetComponent<PlayerStats>() != null)
+            if (shot.collider.gameObject.GetComponent<ZombieStats>() != null)
             {
-                shot.collider.gameObject.GetComponent<PlayerStats>().TakeDamage(STATS.damage);
+                shot.collider.gameObject.GetComponent<ZombieStats>().TakeDamage(STATS.damage);
             }
             if (shot.collider.gameObject.CompareTag("Breakable"))
             {

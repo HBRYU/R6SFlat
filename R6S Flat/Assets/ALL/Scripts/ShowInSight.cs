@@ -72,6 +72,7 @@ public class ShowInSight : MonoBehaviour
                 sr.enabled = true;
             else
                 sr.enabled = false;
-        } 
+        }
+        //Debug.Log("InSight: " + inSight);
     }
 }
