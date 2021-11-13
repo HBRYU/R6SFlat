@@ -1,5 +1,189 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &25719034
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 25719035}
+  m_Layer: 0
+  m_Name: Target
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &25719035
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 25719034}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1922453875656661724}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &182494414
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 182494415}
+  - component: {fileID: 182494416}
+  m_Layer: 20
+  m_Name: Gun (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &182494415
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182494414}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1922453875656661724}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &182494416
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182494414}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d172dc2d6ed75f4eb6852fd61d3a49d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  loadPreset: Desert Eagle
+  STATS:
+    ID: 
+    ammoType: 
+    bulletLR: {fileID: 7949188872892974311, guid: 4bd11124692a34249acab1b23ad5d261,
+      type: 3}
+    muzzleFlash: {fileID: 6542132049811868978, guid: ad9c0c1131a86da42b4e387c1dca6c25,
+      type: 3}
+    bulletHit:
+    - {fileID: 4832983183117703735, guid: c50f0c97800dee547ad81ce751908b15, type: 3}
+    - {fileID: 4832983183117703735, guid: 1d01c4347027ad4499b8b19a36991c93, type: 3}
+    bulletColor: {r: 0, g: 0, b: 0, a: 0}
+    barrelEnd: {fileID: 0}
+    bulletSpawnPoint: {fileID: 0}
+    damageProportionalToProximity: 1
+    DPTP_minRange: 0
+    DPTP_maxRange: 0
+    DPTP_minDamage: 0
+    damage: 30
+    accuracyOffset: 0
+    fireRate: 0
+    distance: 99
+    hitLayers:
+      serializedVersion: 2
+      m_Bits: 6291712
+    fireRate_timer: 0
+    magSize: 0
+    magSize_counter: 30
+    reloadSpeed: 0
+    reloadSpeed_timer: 0
+    fullAuto: 0
+    multiShotCount: 1
+    cameraShakeDuration: 0
+  reloading: 0
+--- !u!1 &494086450
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 494086451}
+  - component: {fileID: 494086452}
+  m_Layer: 20
+  m_Name: Gun (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &494086451
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 494086450}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1922453875656661724}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &494086452
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 494086450}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d172dc2d6ed75f4eb6852fd61d3a49d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  loadPreset: Pump Action
+  STATS:
+    ID: P90
+    ammoType: asd
+    bulletLR: {fileID: 7949188872892974311, guid: 4bd11124692a34249acab1b23ad5d261,
+      type: 3}
+    muzzleFlash: {fileID: 6542132049811868978, guid: ad9c0c1131a86da42b4e387c1dca6c25,
+      type: 3}
+    bulletHit:
+    - {fileID: 4832983183117703735, guid: c50f0c97800dee547ad81ce751908b15, type: 3}
+    - {fileID: 4832983183117703735, guid: 1d01c4347027ad4499b8b19a36991c93, type: 3}
+    bulletColor: {r: 0, g: 0, b: 0, a: 0}
+    barrelEnd: {fileID: 0}
+    bulletSpawnPoint: {fileID: 0}
+    damageProportionalToProximity: 1
+    DPTP_minRange: 4
+    DPTP_maxRange: 10
+    DPTP_minDamage: 0
+    damage: 6
+    accuracyOffset: 0.02
+    fireRate: 0.06
+    distance: 99
+    hitLayers:
+      serializedVersion: 2
+      m_Bits: 6291712
+    fireRate_timer: 0
+    magSize: 50
+    magSize_counter: 30
+    reloadSpeed: 1.7
+    reloadSpeed_timer: 0
+    fullAuto: 1
+    multiShotCount: 1
+    cameraShakeDuration: 0.3
+  reloading: 0
 --- !u!1 &582658324
 GameObject:
   m_ObjectHideFlags: 0
@@ -179,29 +363,38 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d172dc2d6ed75f4eb6852fd61d3a49d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  loadPreset: P90
   STATS:
     ID: P90
-    ammoType: SMG
+    ammoType: asd
     bulletLR: {fileID: 7949188872892974311, guid: 4bd11124692a34249acab1b23ad5d261,
       type: 3}
     muzzleFlash: {fileID: 6542132049811868978, guid: ad9c0c1131a86da42b4e387c1dca6c25,
       type: 3}
+    bulletHit:
+    - {fileID: 4832983183117703735, guid: c50f0c97800dee547ad81ce751908b15, type: 3}
+    - {fileID: 4832983183117703735, guid: 1d01c4347027ad4499b8b19a36991c93, type: 3}
     bulletColor: {r: 0, g: 0, b: 0, a: 0}
     barrelEnd: {fileID: 0}
     bulletSpawnPoint: {fileID: 0}
-    damage: 10
+    damageProportionalToProximity: 1
+    DPTP_minRange: 4
+    DPTP_maxRange: 10
+    DPTP_minDamage: 0
+    damage: 6
     accuracyOffset: 0.02
-    fireRate: 0.08
+    fireRate: 0.06
     distance: 99
     hitLayers:
       serializedVersion: 2
-      m_Bits: 3145984
+      m_Bits: 6291712
     fireRate_timer: 0
-    magSize: 30
+    magSize: 50
     magSize_counter: 30
-    reloadSpeed: 2
+    reloadSpeed: 1.7
     reloadSpeed_timer: 0
     fullAuto: 1
+    multiShotCount: 1
     cameraShakeDuration: 0.3
   reloading: 0
 --- !u!1 &780263092
@@ -400,6 +593,83 @@ Transform:
   m_Father: {fileID: 1922453875656661724}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!1 &1126935752
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1126935753}
+  - component: {fileID: 1126935754}
+  m_Layer: 20
+  m_Name: Gun (4)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1126935753
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1126935752}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1922453875656661724}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1126935754
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1126935752}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d172dc2d6ed75f4eb6852fd61d3a49d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  loadPreset: OP
+  STATS:
+    ID: P90
+    ammoType: asd
+    bulletLR: {fileID: 7949188872892974311, guid: 4bd11124692a34249acab1b23ad5d261,
+      type: 3}
+    muzzleFlash: {fileID: 6542132049811868978, guid: ad9c0c1131a86da42b4e387c1dca6c25,
+      type: 3}
+    bulletHit:
+    - {fileID: 4832983183117703735, guid: c50f0c97800dee547ad81ce751908b15, type: 3}
+    - {fileID: 4832983183117703735, guid: 1d01c4347027ad4499b8b19a36991c93, type: 3}
+    bulletColor: {r: 0, g: 0, b: 0, a: 0}
+    barrelEnd: {fileID: 0}
+    bulletSpawnPoint: {fileID: 0}
+    damageProportionalToProximity: 1
+    DPTP_minRange: 4
+    DPTP_maxRange: 10
+    DPTP_minDamage: 0
+    damage: 6
+    accuracyOffset: 0.02
+    fireRate: 0.06
+    distance: 99
+    hitLayers:
+      serializedVersion: 2
+      m_Bits: 6291712
+    fireRate_timer: 0
+    magSize: 50
+    magSize_counter: 30
+    reloadSpeed: 1.7
+    reloadSpeed_timer: 0
+    fullAuto: 1
+    multiShotCount: 1
+    cameraShakeDuration: 0.3
+  reloading: 0
 --- !u!1 &1571189274
 GameObject:
   m_ObjectHideFlags: 0
@@ -483,6 +753,83 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 2
   m_SpriteSortPoint: 0
+--- !u!1 &1945856093
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1945856094}
+  - component: {fileID: 1945856095}
+  m_Layer: 20
+  m_Name: Gun (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1945856094
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1945856093}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1922453875656661724}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1945856095
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1945856093}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d172dc2d6ed75f4eb6852fd61d3a49d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  loadPreset: Negev
+  STATS:
+    ID: P90
+    ammoType: asd
+    bulletLR: {fileID: 7949188872892974311, guid: 4bd11124692a34249acab1b23ad5d261,
+      type: 3}
+    muzzleFlash: {fileID: 6542132049811868978, guid: ad9c0c1131a86da42b4e387c1dca6c25,
+      type: 3}
+    bulletHit:
+    - {fileID: 4832983183117703735, guid: c50f0c97800dee547ad81ce751908b15, type: 3}
+    - {fileID: 4832983183117703735, guid: 1d01c4347027ad4499b8b19a36991c93, type: 3}
+    bulletColor: {r: 0, g: 0, b: 0, a: 0}
+    barrelEnd: {fileID: 0}
+    bulletSpawnPoint: {fileID: 0}
+    damageProportionalToProximity: 1
+    DPTP_minRange: 4
+    DPTP_maxRange: 10
+    DPTP_minDamage: 0
+    damage: 6
+    accuracyOffset: 0.02
+    fireRate: 0.06
+    distance: 99
+    hitLayers:
+      serializedVersion: 2
+      m_Bits: 6291712
+    fireRate_timer: 0
+    magSize: 50
+    magSize_counter: 30
+    reloadSpeed: 1.7
+    reloadSpeed_timer: 0
+    fullAuto: 1
+    multiShotCount: 1
+    cameraShakeDuration: 0.3
+  reloading: 0
 --- !u!1 &1922453874718968399
 GameObject:
   m_ObjectHideFlags: 0
@@ -608,6 +955,8 @@ GameObject:
   - component: {fileID: 8839762977163995112}
   - component: {fileID: 1620176051}
   - component: {fileID: 288006121}
+  - component: {fileID: 684956865}
+  - component: {fileID: 684956875}
   m_Layer: 20
   m_Name: Player
   m_TagString: Player
@@ -635,6 +984,11 @@ Transform:
   - {fileID: 1571189275}
   - {fileID: 1013524634}
   - {fileID: 1023746624}
+  - {fileID: 25719035}
+  - {fileID: 182494415}
+  - {fileID: 494086451}
+  - {fileID: 1945856094}
+  - {fileID: 1126935753}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -677,7 +1031,7 @@ SpriteRenderer:
   m_SortingLayerID: 1822787843
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: -806953552911236033, guid: 48448ec4c7030f546b75a47c0507bb1b,
+  m_Sprite: {fileID: 3445674281854026479, guid: 48448ec4c7030f546b75a47c0507bb1b,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -717,8 +1071,8 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
+  m_Mass: 5
+  m_LinearDrag: 50
   m_AngularDrag: 999
   m_GravityScale: 0
   m_Material: {fileID: 0}
@@ -756,13 +1110,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 0
-  speed_walk: 0.15
-  speed_crouch: 0.075
-  speed_sprint: 0.25
-  speed_dying: 0.05
+  speed_walk: 0.05
+  speed_crouch: 0.025
+  speed_sprint: 0.1
+  speed_dying: 0.035
   diag_movementDelta: 0.75
   smoothMovement: 0
   rotSpeed: 0.4
+  stamina: 200
+  maxStamina: 200
+  staminaUsageDelta: 3
+  staminaIncrease: 0.25
 --- !u!114 &8839762977163995112
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -775,16 +1133,39 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2fc1ef7ba1ae7c4495c56f32963c69a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  userName: Fuckin Imbecile
+  userName: asd
   barrelEnd: {fileID: 1023746624}
   bulletSpawnPoint: {fileID: 1922453875724236892}
   ID: 0
   health: 100
   maxHealth: 100
-  healFactor: 0
-  armour: 0
-  debugColors: 0
-  corpse: []
+  healFactor: 0.5
+  armour: 0.5
+  infection: 0
+  maxInfection: 100
+  infection_healthDrainDelta: 0.05
+  infection_minHealth: 5
+  ammo:
+  - name: SMG
+    count: 500
+  - name: AR
+    count: 500
+  - name: Pistol
+    count: 100
+  - name: ShotGun
+    count: 50
+  - name: MachineGun
+    count: 200
+  - name: Infinite
+    count: 1e+10
+  grenades:
+  - name: Frag
+    count: 10
+  drugs:
+  - name: Antizen
+    count: 2
+  - name: Bandage
+    count: 3
 --- !u!114 &1620176051
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -821,6 +1202,41 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &684956865
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1922453875656661726}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc07998676806bf47b7524aaad4ef849, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activeWeapon: {fileID: 749750497}
+  weapons:
+  - {fileID: 749750497}
+  - {fileID: 182494414}
+  - {fileID: 494086450}
+  - {fileID: 1945856093}
+  - {fileID: 1126935752}
+--- !u!114 &684956875
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1922453875656661726}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92c9a6b0e0762124a98fba67c3e7d187, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activeGrenade: {fileID: 4960388248578966895, guid: 643b31cda17b346489b233c6d0209746,
+    type: 3}
+  grenades: []
+  coolDown: 0.3
 --- !u!1 &1922453875724236895
 GameObject:
   m_ObjectHideFlags: 0
@@ -1157,7 +1573,7 @@ PrefabInstance:
     - target: {fileID: 9133201526527734124, guid: d95da88540d2d6e44a0c4c40c581b24a,
         type: 3}
       propertyPath: position.x
-      value: 0
+      value: -0.93
       objectReference: {fileID: 0}
     - target: {fileID: 9133201526527734124, guid: d95da88540d2d6e44a0c4c40c581b24a,
         type: 3}
@@ -1187,7 +1603,7 @@ PrefabInstance:
     - target: {fileID: 9133201526527734124, guid: d95da88540d2d6e44a0c4c40c581b24a,
         type: 3}
       propertyPath: Color.a
-      value: 0.5882353
+      value: 0.77254903
       objectReference: {fileID: 0}
     - target: {fileID: 9133201526527734124, guid: d95da88540d2d6e44a0c4c40c581b24a,
         type: 3}
@@ -1197,12 +1613,17 @@ PrefabInstance:
     - target: {fileID: 9133201526527734124, guid: d95da88540d2d6e44a0c4c40c581b24a,
         type: 3}
       propertyPath: Color.r
-      value: 0.75
+      value: 0.9669811
       objectReference: {fileID: 0}
     - target: {fileID: 9133201526527734124, guid: d95da88540d2d6e44a0c4c40c581b24a,
         type: 3}
       propertyPath: Color.g
-      value: 0.9353875
+      value: 0.99231577
+      objectReference: {fileID: 0}
+    - target: {fileID: 9133201526527734124, guid: d95da88540d2d6e44a0c4c40c581b24a,
+        type: 3}
+      propertyPath: Intensity
+      value: 0.7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d95da88540d2d6e44a0c4c40c581b24a, type: 3}
